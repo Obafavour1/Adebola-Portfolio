@@ -1,33 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+body{
+  font-family: "Montserrat", sans-serif;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+h1, h2, h3, h4{
+  font-family: "Nunito Sans", sans-serif;
 }
 
 @layer utilities {
-  .text-balance {
-    text-wrap: balance;
+    .btn_white{
+    @apply border-white bg-white px-8 py-3 text-green-50
+  }
+  
+  .btn_talk{
+    @apply  button_border border-none boxShadow text-black-10 bg-purple-60 px-[14px] py-[10px] flex gap-[10px] rounded-[19.17px] hover:underline
+  }
+
+  .btn_view{
+    @apply border-2 border-black-10  px-[25px] py-[5.9px] regular-14 text-black-10 rounded-[19.17px] hover:underline
+  }
+
+  .btn_design{
+    @apply border border-black-50 px-[11px] py-[5.9px] rounded-[19.17px] hover:underline
+  }
+
+  .btn_design2{
+    @apply border border-black-10  px-[11px] py-[5.9px] rounded-[19.17px] hover:underline
+  }
+
+  .btn_study{
+    @apply button_border border-none boxShadow rounded-[19.17px]  px-[14px] py-[10px] flex gap-[10px] hover:underline
+  }
+
+  .btn_study2{
+    @apply button_border border-none boxShadow rounded-[19.17px]  text-black-10 px-[14px] py-[10px] flex gap-[10px]  hover:underline
+  }
+
+  .max-container{
+    @apply mx-auto max-w-[1400px];
+  }
+
+  .padding-container {
+    @apply px-6 lg:px-[40px] 3xl:px-0
+  }
+
+  /* .flexCenter {
+    @apply flex items-center justify-center;
+  } */
+
+  .flexBetween {
+    @apply flex items-center justify-between;
+  }
+
+  .flexStart {
+    @apply flex items-center justify-start;
+  }
+
+  .flexEnd{
+    @apply flex items-center justify-end;
+  }
+
+  .flexCenter {
+    @apply flex items-center justify-center;
+  }
+
+  .card{
+    @apply flex gap-3 min-h-[300px] lg:h-[328.8px] lg:w-1/2 rounded-[20px] py-[20px] lg:py-[36px] px-[20px] lg:px-[36px] flex-col flexBetween
+  }
+
+  .section{
+    @apply pb-6 lg:pb-8 py-[10px] lg:px-[40px] px-[10px] lg:py-[40px] rounded-[20px] lg:rounded-[40px] mt-[40px] max-container min-h-[500px] lg:h-[600px]
+  }
+
+  /* FONTS */
+
+  .regular-100 {
+   @apply text-[36px] md:text-[60px] lg:text-[100px] font-[400] leading-[40px] md:leading-[60px] lg:leading-[100px]  ;
+  }
+
+  .regular-50 {
+    @apply lg:text-[50px] text-[1.75rem] font-[400] leading-[50px];
+  }
+
+  .regular-32 {
+    @apply text-[32px] font-[400] leading-[43.65px];
+  }  
+
+  .regular-14 {
+    @apply text-[14px] font-[400] leading-[22.4px];
+  }
+
+  .regular_14 {
+    @apply text-[14px] font-[400] leading-[14px];
   }
 }
+
+.menu_gradient{
+  background-color: #12011a9f;
+}
+
+.bg_gradient1{
+  background: linear-gradient(93.26deg, #8338EC 10.4%, #9C2EF5 101.06%);
+
+}
+
+.bg_gradient2{
+  background:linear-gradient(93.26deg, #9E2DF6 10.4%, #B923FF 101.06%);
+}
+
+.text_gradient{
+  background: linear-gradient(93deg, #8338EC 49.3%, #B923FF 87.76%);
+  -webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+}
+
+
+.button_border{
+  position: relative;
+}
+.button_border::before{
+  content: '';
+  position: absolute;
+  inset: 0;
+  border: 2px solid transparent;
+  border-radius: 19.7px;
+  background: linear-gradient(to right, #8338EC 49.3%, #B923FF 87.76%) border-box;
+  -webkit-mask:
+    linear-gradient(#fff 0 0) padding-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+        mask-composite: exclude;
+}
+
+.boxShadow{
+  box-shadow: 0px 0px 3.15px 0px #A22DF71A,0px 0px 6.52px 0px #A22DF71A, 0px 0px 13px 0px #A22DF71A,0px 0px 25.48px 0px #A22DF71A, 0px 0px 46.85px 0px #A22DF71A, 0px 0px 19px 9px #A22DF71A;;
+}
+
+
