@@ -87,11 +87,11 @@ h1, h2, h3, h4{
   /* FONTS */
 
   .regular-100 {
-   @apply text-[36px] md:text-[60px] font-[400] leading-[40px] md:leading-[60px] lg:text-[80px] lg:leading-[120%];  ;
+   @apply text-[36px] md:text-[60px] font-[400] leading-[40px] md:leading-[60px] lg:text-[70px] lg:leading-[120%];  ;
   }
 
   .regular-50 {
-    @apply lg:text-[50px] text-[1.75rem] font-[400] leading-[50px];
+    @apply lg:text-[40px] text-[1.75rem] font-[400] leading-[40px];
   }
 
   .regular-32 {
