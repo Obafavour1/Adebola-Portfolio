@@ -33,7 +33,7 @@ const Mobile = () => {
             to provide users with a seamless and immersive 
             music listening experience tailored to their preferences.
           </p>
-          <div>
+          {/* <div>
             <Link href="https://www.behance.net/gallery/163075945/Music-player-store" >
               <Button 
                 type="button"
@@ -41,7 +41,7 @@ const Mobile = () => {
                 variant="btn_view"
               />
             </Link>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>
