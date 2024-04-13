@@ -6,7 +6,7 @@ type ButtonProps = {
   type: 'button';
   title: string;
   icon?: string;
-  variant: 'btn_talk'
+  variant: string;
 }
 
 const Button = ({ type, title, icon, variant }: ButtonProps) => {
