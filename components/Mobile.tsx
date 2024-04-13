@@ -26,14 +26,14 @@ const Mobile = () => {
         </div>
       </div>
 
-      <div className='card bg_gradient2 mt-[20px] lg:mt-0'>
+      {/* <div className='card bg_gradient2 mt-[20px] lg:mt-0'>
         <h3 className='regular-32 w-full'>Music Player Mobile App </h3>
         <div>
           <p className='regular-14 mb-[10px]'>The design solution for the music player app, named Harmoni, aims 
             to provide users with a seamless and immersive 
             music listening experience tailored to their preferences.
           </p>
-          {/* <div>
+          <div>
             <Link href="https://www.behance.net/gallery/163075945/Music-player-store" >
               <Button 
                 type="button"
@@ -41,9 +41,9 @@ const Mobile = () => {
                 variant="btn_view"
               />
             </Link>
-          </div> */}
+          </div>
         </div>
-      </div>
+      </div> */}
     </section>
   )
 }
