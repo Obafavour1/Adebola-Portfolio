@@ -5,11 +5,11 @@ import Button from './Button'
 
 const Mobile = () => {
   return (
-    <section className='lg:max-container lg:flexCenter  mt-[40px] gap-[24px]'>
-      <div className="card bg_gradient1">
+    <section className='lg:max-container text-black-10 lg:flexCenter  mt-[40px] gap-[24px]'>
+      <div className="card  bg_gradient1">
         <h3 className='regular-32 w-full'>ChowSpot Mobile App</h3>
         <div>
-          <p className='regular-14 mb-[10px]'>Welcome to ChowSpot, the ultimate restaurant app designed to elevate 
+          <p className='regular-14  mb-[10px]'>Welcome to ChowSpot, the ultimate restaurant app designed to elevate 
             your dining experiennce, Whether you are a food enthusiast, casual diner or
             someone with dietary preferences. This food explorer is here to guide
             you through a culinary journey.

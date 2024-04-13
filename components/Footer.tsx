@@ -38,7 +38,7 @@ const Footer = () => {
           </Link>
         </div>
       </div>
-      <div className="flexBetween flex-col gap-6 lg:flex-row w-full text-black-10">
+      <div className="flexBetween flex-col regular-14 gap-6 lg:flex-row w-full text-black-10">
         <p>&copy 2024-All Rights Reserved</p>
         <p>Available for freelace work</p>
       </div>
